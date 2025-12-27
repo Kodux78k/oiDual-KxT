@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pwa-oidual.KxT-v1';
+const CACHE_NAME = 'pwa-oidual.KxT-v2';
 const ASSETS = [
     './',
     'index.html',
