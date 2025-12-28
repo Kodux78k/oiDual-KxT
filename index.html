@@ -1126,23 +1126,6 @@ window.onload = () => App.init();
 </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-<script type="module">
-  import initUnifiedPanel from './unifiedPanelModule.js';
-  // inicialização com opções
-  const UI = initUnifiedPanel({
-    lockBehavior: 'iframe', // 'newtab' ou 'same'
-    lockTarget: 'about:blank',
-    sendFunctionName: 'App.handleSend', // se seu app usa outro nome, mude aqui
-    attachToSelector: 'body',
-    inputSelectors: ['#chatInputContainer', '.composer'],
-    symbols: ['Φ','☼','☯','✦',':smile:']
-  });
 
-  // Exemplo: fechar painel após init
-  // UI.closePanel();
-
-  // Exemplo: destruir quando fizer deploy de outro patch
-  // UI.destroy();
-</script>
 </body>
 </html>
