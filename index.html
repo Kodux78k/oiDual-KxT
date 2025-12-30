@@ -353,7 +353,7 @@
             </div>
             <div class="cockpit-item">
                 <div class="cockpit-label">Modelo de IA (Engine)</div>
-                <input type="text" id="inputModel" class="cockpit-input" placeholder="google/gemini-2.0-flash-exp">
+                <input type="text" id="inputModel" class="cockpit-input" placeholder="arcee-ai/trinity-mini:free">
             </div>
             <div class="cockpit-item">
                 <div class="cockpit-label">Background Visual</div>
@@ -437,7 +437,7 @@ const App = {
         
         const savedUser = s.getItem(STORAGE.USER_ID) || 'Viajante';
         document.getElementById('inputUserId').value = savedUser;
-        document.getElementById('inputModel').value = s.getItem(STORAGE.MODEL) || 'openai/gpt-oss-20b:free';
+        document.getElementById('inputModel').value = s.getItem(STORAGE.MODEL) || 'arcee-ai/trinity-mini:free';
 
         const savedAuto = s.getItem(STORAGE.SOLAR_AUTO);
         this.state.isAutoSolar = savedAuto === 'false' ? false : true;
